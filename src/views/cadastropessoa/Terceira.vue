@@ -45,6 +45,18 @@
             <div class="p-field p-col-12 p-md-6">
               <span class="p-float-label">
                 <InputText id="nome" type="text"/>
+                <label for="nome">Email</label>
+              </span>
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+              <span class="p-float-label">
+                <InputText id="nome" type="text"/>
+                <label for="nome">Telefone</label>
+              </span>
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+              <span class="p-float-label">
+                <InputText id="nome" type="text"/>
                 <label for="nome">Usuario</label>
               </span>
             </div>
@@ -67,7 +79,7 @@
             <label for="binary"><a class="link-termo" href="" > Li e Aceito os Termos de Uso </a></label>
         </div>
           </div>
-          <div style="margin-top: 10px">
+          <div style="margin-top: 10px;margin-bottom:50px">
               <Button @click="onPagenext(1)" style="margin-top: 20px" label="Voltar" class="p-button-outlined p-button-secondary" />
               <Button style="margin-left:10px" label="Confirmar" class="p-button-outlined p-button-secondary" />
             </div>

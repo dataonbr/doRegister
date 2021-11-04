@@ -100,7 +100,7 @@
               </span>
             </div>
           </div>
-          <div style="margin-top: 10px">
+          <div style="margin-top: 10px;margin-bottom:50px">
               <Button @click="onPagenext(1)" style="margin-top: 20px" label="Voltar" class="p-button-outlined p-button-secondary" />
               <Button @click="onPagenext(3)" style="margin-left:10px" label="Avançar" class="p-button-outlined p-button-secondary" />
             </div>

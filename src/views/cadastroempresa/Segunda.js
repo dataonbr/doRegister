@@ -31,9 +31,8 @@ export default {
     }
   },
   methods: {
-    onCnpjInfo () {
-      axios.get('https://www.receitaws.com.br/v1/cnpj/17401896000202').then(res => {
-
+    onCnpjInfo (cnpf) {
+      axios.get('https://www.receitaws.com.br/v1/cnpj/').then(res => {
       })
     },
     onPagenext (index) {
