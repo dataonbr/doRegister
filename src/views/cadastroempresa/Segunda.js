@@ -10,7 +10,8 @@ export default {
       respostaCnpj: 'Ebaaaa !! Conseguimos encontrar os dados de sua empresa agora por favor confirme os dados e vamos prosseguir',
       form: {
         cnpj: '',
-        regime: ''
+        regime: '',
+        ces: ''
       },
       regimes: [// aqui pegar da api os regimes
         { descricao: 'Simples Nacional', id: '1' },
