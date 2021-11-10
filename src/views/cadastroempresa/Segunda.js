@@ -28,11 +28,17 @@ export default {
   mounted () {
     if (this.$route.params.cnpj !== undefined) {
       this.form.cnpj = this.$route.params.cnpj
+      this.onCnpjInfo(this.form.cnpj)
     }
   },
   methods: {
-    onCnpjInfo (cnpf) {
-      axios.get('https://www.receitaws.com.br/v1/cnpj/').then(res => {
+    onCnpjInfo (cnpj) {
+      cnpj = cnpj.replace(/[^0-9]/g, '')
+      console.log(cnpj)
+      axios.get('https://localhost:5001/api/dataOn/doCNPJ/GetData?cnpj=' + cnpj, { headers: { Authorization: 'Basic ZGF0YW9uOkRhdGFPbkFQSUAj' } }).then(res => {
+        console.log(res.data)
+      }).catch(err => {
+        console.log(err)
       })
     },
     onPagenext (index) {
